@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  background-color: hsl(180, 100%, 5%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  color: inherit;
+}
+
+form {
+  background-color: hsl(180, 100%, 60%);
+  color: hsl(180, 100%, 5%);
+  text-align: center;
+}
