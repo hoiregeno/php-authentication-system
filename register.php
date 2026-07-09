@@ -14,6 +14,8 @@
   </head>
   <body>
     <form action="register.php" method="post">
+      <h2>Register</h2>
+      
       <div class="input-box">
         <input
           type="text"
