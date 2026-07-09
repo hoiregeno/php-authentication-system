@@ -44,6 +44,7 @@ form .input-box {
   border: 1px solid hsl(180, 100%, 20%);
   border-radius: 10px;
   margin-top: 1.5rem;
+  overflow: hidden;
 }
 
 .input-box input {
@@ -117,6 +118,7 @@ form button:hover,
 .wrapper a:hover {
   filter: brightness(1.5);
 }
+
 form button:active,
 .wrapper a:active {
   filter: brightness(1.85);
