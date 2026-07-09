@@ -26,8 +26,98 @@ button {
   color: inherit;
 }
 
-form {
+form,
+.wrapper {
   background-color: hsl(180, 100%, 60%);
   color: hsl(180, 100%, 5%);
   text-align: center;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+form h2 {
+  font-size: 2.5rem;
+}
+
+form .input-box {
+  position: relative;
+  border: 1px solid hsl(180, 100%, 20%);
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  color: hsl(180, 100%, 20%);
+  transition: transform 150ms ease-in;
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+  color: hsl(180, 100%, 5%);
+  font-size: 0.85rem;
+  transform: translateY(-200%);
+  background-color: hsl(180, 100%, 60%);
+  padding-inline: 0.5rem;
+  font-weight: 500;
+}
+
+form p,
+.wrapper p {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: hsl(180, 100%, 20%);
+}
+
+form a,
+.wrapper a {
+  color: hsl(180, 100%, 5%);
+}
+
+.wrapper p {
+  margin-top: 0;
+}
+
+.wrapper a {
+  margin-top: 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: none;
+}
+form a:active {
+  color: hsl(180, 100%, 20%);
+}
+
+form button,
+.wrapper a {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  background-color: hsl(180, 100%, 5%);
+  color: hsl(180, 100%, 60%);
+  display: block;
+  width: 100%;
+  padding-block: 1rem;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: filter 150ms ease-in;
+}
+
+form button:hover,
+.wrapper a:hover {
+  filter: brightness(1.5);
+}
+form button:active,
+.wrapper a:active {
+  filter: brightness(1.85);
 }
