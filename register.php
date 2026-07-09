@@ -59,6 +59,12 @@
     <form action="register.php" method="post">
       <h2>Register</h2>
 
+      <?php if(isset($err_message)): ?>
+        <p class="err-message">
+          <?php echo htmlspecialchars($err_message); ?>
+        </p>  
+      <?php endif; ?>
+
       <div class="input-box">
         <input
           type="text"
