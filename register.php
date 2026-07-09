@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <form action="" method="post">
+    <form action="register.php" method="post">
       <div class="input-box">
         <input
           type="text"
@@ -31,7 +31,7 @@
         /><label for="password">Password</label>
       </div>
 
-      <p>Already have an account? <a href="index.html">Login</a></p>
+      <p>Already have an account? <a href="index.php">Login</a></p>
       <button type="submit">Submit</button>
     </form>
   </body>
