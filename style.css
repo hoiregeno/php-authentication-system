@@ -2,6 +2,7 @@
   --clr-accent: hsl(180, 100%, 60%);
   --clr-dark: hsl(180, 100%, 5%);
   --clr-border: hsl(180, 100%, 20%);
+  --clr-border-hover: hsl(180, 100%, 40%);
   --clr-error: hsl(9, 100%, 54%);
   --clr-error-bg: hsl(9, 100%, 75%);
 
@@ -68,9 +69,13 @@ form .err-message {
 
 form .input-box {
   position: relative;
-  border: 1px solid var(--clr-border);
+  border: 1px solid var(--clr-border-hover);
   border-radius: var(--radius-sm);
   margin-top: var(--gap-lg);
+}
+
+form .input-box:focus-within {
+  border-color: var(--clr-border);
 }
 
 .input-box input {
