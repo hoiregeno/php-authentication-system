@@ -22,9 +22,8 @@
       if(mysqli_stmt_execute($stmt)){
         $result = mysqli_stmt_get_result($stmt);
         $row = mysqli_fetch_assoc($result);
-        $hash = $row ? $row["hashed_password"] : '$2y$10$abcdefghijklmnopqrstuuVYVvzk1E9O5rZQwGqYwK6y6q6y6q6y';
 
-        if($row && password_verify($password_input, $hash)){
+        if($row && password_verify($password_input, $row["hashed_password"])){
           mysqli_stmt_close($stmt);
           $_SESSION["username_input"] = $username_input;
           header("Location: dashboard.php");
