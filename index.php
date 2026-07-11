@@ -60,7 +60,7 @@
     <form action="index.php" method="post">
       <h2>Login</h2>
 
-      <?php if(isset($err_message)): ?>
+      <?php if(!empty($err_message)): ?>
         <p class="err-message">
           <?php echo htmlspecialchars($err_message); ?>
         </p>  
