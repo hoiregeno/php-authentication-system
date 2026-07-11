@@ -44,7 +44,6 @@ form .input-box {
   border: 1px solid hsl(180, 100%, 20%);
   border-radius: 10px;
   margin-top: 1.5rem;
-  overflow: hidden;
 }
 
 .input-box input {
