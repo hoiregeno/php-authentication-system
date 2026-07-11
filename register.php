@@ -23,10 +23,9 @@
 
       // 4. Execute is the step that actually runs the query against the DB.
       try{
-        if(mysqli_stmt_execute($stmt)){
-          header("Location: index.php");
-          exit;
-        }
+        mysqli_stmt_execute($stmt);
+        header("Location: index.php");
+        exit;
       }
       catch(mysqli_sql_exception $e){
         // 5. getCode() gives us the MySQL error number 1062, duplicate entry.
@@ -37,6 +36,8 @@
           $err_message = "Registration failed. Please try again.";
         }
       }
+
+      mysqli_stmt_close($stmt);
     }
   }
 ?>

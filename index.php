@@ -32,12 +32,12 @@
         else{
           $err_message = "Wrong username or password. Please try again.";
         }
-
-        mysqli_stmt_close($stmt);
       }
       else{
         $err_message = "Something went wrong. Please try again.";
       }
+        
+      mysqli_stmt_close($stmt);
     }
   }
 ?>
