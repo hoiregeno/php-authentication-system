@@ -82,7 +82,7 @@
         /><label for="password">Password</label>
       </div>
 
-      <p>Already have an account? <a href="index.php">Login</a></p>
+      <p>Already have an account? <a href="index.php">Login here</a></p>
       <button type="submit">Submit</button>
     </form>
   </body>

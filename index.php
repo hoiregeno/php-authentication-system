@@ -83,7 +83,7 @@
         /><label for="password">Password</label>
       </div>
 
-      <p>Don't have an account? <a href="register.php">Register</a></p>
+      <p>Don't have an account? <a href="register.php">Register here</a></p>
       <button type="submit">Submit</button>
     </form>
   </body>
