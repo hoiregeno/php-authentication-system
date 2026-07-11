@@ -2,7 +2,7 @@
   session_start();
 
   // Session guard
-  if(!$_SESSION["username_input"] || !isset($_SESSION["username_input"])){
+  if(!isset($_SESSION["username_input"]) || !$_SESSION["username_input"]){
     header("Location: index.php");
     exit;
   }
