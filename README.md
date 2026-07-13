@@ -1,4 +1,4 @@
-# PHP Authentication System
+# Authentication System
 
 A simple and secure website for user registration and login. Built safely using PHP, MySQL, and secure data handling to prevent unauthorized access.
 
