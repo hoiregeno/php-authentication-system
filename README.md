@@ -49,4 +49,4 @@ CREATE TABLE users (
 
 1. Move your project folder containing the files above into your local server directory (e.g., htdocs for XAMPP).
 2. Started Apache and MySQL in your server control panel.
-3. [Open your browser and go to](http://localhost/php-authentication-system/index.php).
+3. Open your browser and go to [http://localhost/php-authentication-system/index.php](http://localhost/php-authentication-system/index.php).
