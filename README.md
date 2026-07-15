@@ -21,6 +21,8 @@ A simple and secure website for user registration and login. Built safely using 
 
 ## Getting Started
 
+Create the files above in a project folder and follow the steps below:
+
 ### 1. Database Setup
 1. Open your database manager (like **phpMyAdmin**) and create a new database named `auth_system`.
 2. Run the following SQL query to create the table:
